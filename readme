@@ -1,0 +1,57 @@
+# Django Project Setup
+
+This document provides step-by-step instructions to set up a Django project, including creating a virtual environment, installing dependencies, configuring the project, and running the local server.
+
+## Prerequisites
+
+- Python 3.8+
+- pip (Python package installer)
+
+## Step 1: Create a Virtual Environment
+
+It's a good practice to use a virtual environment for your projects to manage dependencies.
+
+### Linux and macOS
+
+1. Open your terminal.
+2. Navigate to your project directory.
+3. Create a virtual environment:
+
+    ```bash
+    python3 -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+### Windows
+
+1. Open your command prompt.
+2. Navigate to your project directory.
+3. Create a virtual environment:
+
+    ```bash
+    python -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    ```bash
+    .\venv\Scripts\activate
+    ```
+
+## Step 2: Install Django and Dependencies
+
+Once the virtual environment is activated, install Django LTS (Long Term Support version) and other dependencies:
+
+```bash
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+
+```
